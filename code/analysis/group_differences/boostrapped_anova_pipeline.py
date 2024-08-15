@@ -1,3 +1,40 @@
+"""
+This script is designed to perform bootstrapped Analysis of Variance (ANOVA) on a dataset. The script includes steps to 
+generate bootstrap samples, run ANOVA tests on these samples, and visualize the distribution of F-statistics 
+obtained from the bootstrap procedure.
+
+Overview of the Script:
+-----------------------
+1. Importing Libraries:
+   - Necessary Python libraries are imported, including `numpy` and `pandas` for data manipulation, 
+     `statsmodels` for statistical modeling, and `matplotlib` and `seaborn` for data visualization.
+
+2. Loading and Preparing Data:
+   - The script assumes that the data is loaded into a DataFrame. This data is then sampled with replacement 
+     to create multiple bootstrap samples.
+
+3. Defining Functions:
+   - Several functions are defined to encapsulate common operations, such as performing ANOVA on bootstrap samples 
+     and plotting the distribution of F-statistics.
+
+4. Performing Bootstrapped ANOVA:
+   - The core of the script involves conducting ANOVA tests on each bootstrap sample to obtain F-statistics, 
+     which are then stored and analyzed.
+
+5. Visualizing Results:
+   - The script includes steps to visualize the distribution of F-statistics using histograms, 
+     with the observed F-statistic from the original data highlighted for comparison.
+
+6. Interpreting Outputs:
+   - Finally, the script provides a means to interpret the distribution of F-statistics, helping to determine 
+     the robustness of the ANOVA results.
+
+Purpose:
+--------
+The primary goal of this script is to assess the stability and robustness of ANOVA results through bootstrapping, 
+providing insights into the variability of the F-statistic under repeated sampling.
+"""
+
 #!/usr/bin/env python
 # coding: utf-8
 

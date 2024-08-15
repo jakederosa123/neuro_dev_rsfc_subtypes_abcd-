@@ -1,3 +1,37 @@
+"""
+This script is designed to compile and analyze sampling data related to resting-state studies. It involves steps to 
+load multiple datasets, aggregate or summarize the sampling information, and produce outputs that can be used for 
+further analysis or reporting.
+
+Overview of the Script:
+-----------------------
+1. Importing Libraries:
+   - The necessary Python libraries are imported for data manipulation and analysis, including `pandas` and `numpy`, 
+     which are essential for handling large datasets and performing complex operations.
+
+2. Loading and Aggregating Data:
+   - The script reads in multiple datasets related to resting-state studies, merging or aggregating them as needed. 
+     This may include steps to handle different data formats, remove duplicates, and align datasets by key variables.
+
+3. Summarizing Sampling Information:
+   - The core of the script involves summarizing the sampling data, which could include calculating totals, 
+     means, or other summary statistics across the combined datasets. This ensures that the sampling information 
+     is comprehensive and ready for analysis.
+
+4. Outputting Results:
+   - The script saves the summarized sampling data to a new file or prints the results to the console. 
+     This output can then be used in other parts of the research process or for reporting purposes.
+
+5. Optional Analysis:
+   - The script may include additional analysis of the compiled sampling data, such as checking for biases 
+     or trends within the sampling process.
+
+Purpose:
+--------
+The primary goal of this script is to compile and summarize sampling data from multiple resting-state studies, 
+ensuring that the information is complete, accurate, and ready for further analysis or use in research outputs.
+"""
+
 #!/usr/bin/env python
 # coding: utf-8
 

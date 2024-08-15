@@ -1,3 +1,35 @@
+"""
+This script is designed to calculate and analyze the proportions or percentages of different subgroups within a resting-state dataset. 
+It includes steps to load the dataset, compute the percentages for various subgroups, and output the results for further analysis.
+
+Overview of the Script:
+-----------------------
+1. Importing Libraries:
+   - The necessary Python libraries are imported for data manipulation, including `pandas` and `numpy`, which are essential 
+     for loading data, performing calculations, and handling data structures.
+
+2. Loading and Preparing Data:
+   - The script reads in the resting-state dataset, performing any necessary preprocessing steps such as filtering, grouping,
+     and normalizing the data to ensure it is ready for percentage calculations.
+
+3. Calculating Subgroup Percentages:
+   - The core of the script involves calculating the percentages of different subgroups within the dataset. This involves
+     determining the representation of each subgroup within the total dataset or within specific categories.
+
+4. Outputting Results:
+   - The script saves the calculated percentages to a file or prints the results to the console, making them available for
+     further analysis or reporting.
+
+5. Optional Visualization:
+   - If applicable, the script may include options for visualizing the percentages using plots or charts, though the primary focus
+     is on the calculation and output of the subgroup percentages.
+
+Purpose:
+--------
+The primary goal of this script is to provide a clear and accurate calculation of the proportions or percentages of different 
+subgroups within a resting-state dataset, facilitating further analysis or integration into other processes.
+"""
+
 #!/usr/bin/env python
 # coding: utf-8
 
