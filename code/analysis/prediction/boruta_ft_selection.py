@@ -1,3 +1,37 @@
+"""
+This script is designed to perform feature selection using the Boruta algorithm. The Boruta algorithm is a wrapper
+built around random forest classification, specifically designed to identify all relevant features in the dataset,
+including those that are weakly relevant.
+
+Overview of the Script:
+-----------------------
+1. Importing Libraries:
+   - The necessary Python libraries are imported for data manipulation, model building, and feature selection.
+     This includes libraries such as `pandas`, `numpy`, and `BorutaPy` from the scikit-learn ecosystem.
+
+2. Loading and Preparing Data:
+   - The script reads in the dataset and performs any necessary preprocessing steps such as handling missing values,
+     encoding categorical variables, and splitting the data into features and target variables.
+
+3. Defining and Applying the Boruta Algorithm:
+   - The core of the script involves initializing the Boruta algorithm, fitting it to the data, and selecting important features.
+     The algorithm runs multiple iterations of the random forest classifier, comparing the importance of real features
+     with that of shadow features (randomly shuffled copies of the original features).
+
+4. Evaluating and Saving the Results:
+   - The script evaluates the results of the Boruta feature selection process, identifying which features were deemed important.
+     These results are then saved to a file or printed for further analysis.
+
+5. Visualizing Feature Importance:
+   - The script includes steps to visualize the importance of the selected features using plots or charts.
+
+Purpose:
+--------
+The primary goal of this script is to identify all relevant features in the dataset using the Boruta algorithm,
+ensuring that the final model includes only the features that contribute meaningfully to the prediction task.
+"""
+
+
 #!/usr/bin/env python
 # coding: utf-8
 
