@@ -1,3 +1,39 @@
+"""
+This script is designed to import and handle subtype-specific data. The script involves reading subtype data, performing subtype-specific operations, 
+and preparing this data for further analysis.
+
+Overview of the Script:
+-----------------------
+1. Importing Libraries:
+   - The necessary Python libraries are imported for data manipulation, file handling, and possibly specific 
+     libraries related to subtypes.
+
+2. Loading Subtype Data:
+   - The script reads in subtype data from files, which could involve specifying file paths, formats, and reading options 
+     to correctly load the data.
+
+3. Subtype-Specific Processing:
+   - After loading, the script may perform operations specific to the subtypes, such as filtering, labeling, or 
+     deriving new subtype-specific columns.
+
+4. Defining Functions:
+   - Functions are defined to encapsulate common subtype-related operations, making the script more modular 
+     and reusable. These functions might include specific subtype processing tasks or utilities to facilitate subtype handling.
+
+5. Preparing Subtype Data for Analysis:
+   - The script ensures that the subtype data is in the correct format and structure for further analysis, which may be performed 
+     in separate scripts or notebooks.
+
+6. Outputting Subtype Data:
+   - If applicable, the script might save the processed subtype data to new files, print summaries to the console, 
+     or return data structures for use in other parts of the project.
+
+Purpose:
+--------
+The primary goal of this script is to reliably import and preprocess subtype-specific data, ensuring it is clean and ready 
+for analysis or further processing in the workflow.
+"""
+
 #!/usr/bin/env python
 # coding: utf-8
 from functions import *
@@ -81,37 +117,3 @@ full_sample_rest_dont_include = rename_subtype(full_sample_rest_dont_include, 4,
 full_sample_rest_dont_include_idsub = full_sample_rest_dont_include[['ID', 'Subtype']]
 
 print("Resting State Dont Include: full_sample_rest_dont_include /n full_sample_rest_dont_include_idsub")
-
-#--------------------------------------------------------------------------------------------------------------------------------
-#DTI
-#-------------------------------------------------------------------------------------------------------------------------------
-
-#sample1_dti = read_subtype(data_path +'/sample1_dti_baseline_02052023/Output/Results/sample1_dti_baseline_02052023_Full_Subtypes.csv')
-#sample2_dti = read_subtype(data_path +'/sample2_dti_baseline_02052023/Output/Results/sample2_dti_baseline_02052023_Full_Subtypes.csv')
-
-#sample1_dti = rename_subtype(sample1_dti, 2, 1, 4, 3, 5) # do not unhash 
-#sample2_dti = rename_subtype(sample2_dti, 5, 3, 1, 4, 2)
-                        
-#sample1_dti = pd.merge(sample1_dti, include, on = 'ID')
-#sample2_dti = pd.merge(sample2_dti, include, on = 'ID')
-
-#sample1_dti_idsub = sample1_dti[['ID', 'Subtype']]
-#sample2_dti_idsub = sample2_dti[['ID', 'Subtype']]
-#print("DTI Baseline: sample1_dti, sample2_dti /n sample1_dti_idsub, sample2_dti_idsub, sample2_dti_idsub")
-
-#--------------------------------------------------------------------------------------------------------------------------------
-#SMRI
-#--------------------------------------------------------------------------------------------------------------------------------
-#sample1_smri = read_subtype(data_path +'/sample1_smri_baseline_02052023/Output/Results/sample1_smri_baseline_02052023_Full_Subtypes.csv')
-#sample2_smri = read_subtype(data_path + '/sample2_smri_baseline_02052023/Output/Results/sample2_smri_baseline_02052023_Full_Subtypes.csv')
-
-#sample1_smri = rename_subtype(sample1_smri, 2, 1, 4, 3) 
-#sample2_smri = rename_subtype(sample2_smri, 2, 4, 1, 3)
-
-#sample1_smri = pd.merge(sample1_smri, include, on = 'ID')
-#sample2_smri = pd.merge(sample2_smri, include, on = 'ID')
-                       
-#sample1_smri_idsub = sample1_smri[['ID', 'Subtype']]
-#sample2_smri_idsub = sample2_smri[['ID', 'Subtype']]
-
-#print("SMRI Baseline: sample1_smri, sample2_smri, sample1_smri_idsub, sample2_smri_idsub")

@@ -1,3 +1,39 @@
+"""
+This script is designed to handle the import and initial processing of data. The exact operations include reading 
+data, cleaning or transforming the data, and preparing it for further analysis or use in other scripts.
+
+Overview of the Script:
+-----------------------
+1. Importing Libraries:
+   - The necessary Python libraries are imported for data manipulation, file handling, and possibly logging or other utilities.
+
+2. Loading Data:
+   - The script reads in data from files, databases, or other sources. This could involve specifying file paths, 
+     formats, and reading options to correctly load the data.
+
+3. Data Cleaning and Transformation:
+   - After loading, the script may perform cleaning operations such as handling missing values, converting data types, 
+     or filtering specific rows/columns. Transformation steps might include merging datasets, normalizing data, or 
+     deriving new columns.
+
+4. Defining Functions:
+   - Functions are defined to encapsulate common operations, making the script more modular and reusable. 
+     These functions might include specific data processing tasks or utilities to facilitate data import.
+
+5. Preparing Data for Analysis:
+   - The script ensures that the data is in the correct format and structure for further analysis, which may be performed 
+     in separate scripts or notebooks.
+
+6. Outputting Data:
+   - If applicable, the script might save the processed data to new files, print summaries to the console, 
+     or return data structures for use in other parts of the project.
+
+Purpose:
+--------
+The primary goal of this script is to reliably import and preprocess data, ensuring it is clean and ready for analysis 
+or further processing in the workflow.
+"""
+
 #!/usr/bin/env python
 # coding: utf-8
 
